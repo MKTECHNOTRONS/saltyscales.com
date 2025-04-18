@@ -1,0 +1,31 @@
+<div id="shopify-section-mini-cart" class="shopify-section shopify-section--mini-cart">
+    <cart-drawer section="mini-cart" id="mini-cart" class="mini-cart drawer drawer--large">
+        <span class="drawer__overlay"></span>
+
+        <header class="drawer__header">
+            <p class="drawer__title heading h6"><svg focusable="false" width="21" height="20" class="icon icon--header-shopping-cart   " viewBox="0 0 21 20">
+        <path d="M0 1H4L5 11H17L19 4H8" fill="none" stroke="currentColor" stroke-width="2"></path>
+        <circle cx="6" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"></circle>
+        <circle cx="16" cy="17" r="2" fill="none" stroke="currentColor" stroke-width="2"></circle>
+      </svg>Cart</p>
+
+            <button type="button" class="drawer__close-button tap-area" data-action="close" title="Close"><svg focusable="false" width="14" height="14" class="icon icon--close   " viewBox="0 0 14 14">
+        <path d="M13 13L1 1M13 1L1 13" stroke="currentColor" stroke-width="2" fill="none"></path>
+      </svg></button>
+        </header>
+        <div class="drawer__content drawer__content--center">
+            <p>Your cart is empty</p>
+
+            <div class="button-wrapper">
+                <a href="/collections/all" class="button button--primary">Start shopping</a>
+            </div>
+        </div>
+        <openable-element id="mini-cart-note" class="mini-cart__order-note">
+            <span class="openable__overlay"></span>
+            <label for="cart[note]" class="mini-cart__order-note-title heading heading--xsmall">Add order note</label>
+            <textarea is="cart-note" name="note" id="cart[note]" rows="3" aria-owns="order-note-toggle" class="input__field input__field--textarea" placeholder="How can we help you?"></textarea>
+            <button type="button" data-action="close" class="form__submit form__submit--closer button button--secondary">Save</button>
+        </openable-element>
+    </cart-drawer>
+
+</div>
